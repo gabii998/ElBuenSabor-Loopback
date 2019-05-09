@@ -13,18 +13,6 @@
     "fecha": {
       "type": "date",
       "required": true
-    },
-    "nombreEmpresa": {
-      "type": "string",
-      "required": true
-    },
-    "direccionEmpresa": {
-      "type": "string",
-      "required": true
-    },
-    "CUITEmpresa": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
