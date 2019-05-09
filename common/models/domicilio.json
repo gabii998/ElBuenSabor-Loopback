@@ -1,0 +1,36 @@
+{
+  "name": "Domicilio",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idDomicilio": {
+      "type": "string",
+      "id": true
+    },
+    "calle": {
+      "type": "string"
+    },
+    "numero": {
+      "type": "string"
+    },
+    "referencias": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idDepartamento": {
+      "type": "belongsTo",
+      "model": "Departamento",
+      "foreignKey": "idDepartamento",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

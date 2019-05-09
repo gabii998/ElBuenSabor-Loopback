@@ -1,0 +1,37 @@
+{
+  "name": "Departamento",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "scope": {
+    "include": "idProvincia"
+  },
+  "properties": {
+    "idDepartamento": {
+      "type": "string",
+      "id": true
+    },
+    "nombreDepartamento": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idProvincia": {
+      "type": "belongsTo",
+      "model": "Provincia",
+      "foreignKey": "idProvincia",
+      "options": {
+        "nestRemoting": true
+      },
+      "scope": {
+        "include": "idPais"
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
