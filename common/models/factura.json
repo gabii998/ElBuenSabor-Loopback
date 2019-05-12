@@ -8,7 +8,7 @@
   "properties": {
     "numero_factura": {
       "type": "number",
-      "id":true
+      "id": true
     },
     "fecha": {
       "type": "date",

@@ -1,0 +1,30 @@
+{
+  "name": "Cliente",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idCliente": {
+      "type": "number"
+    },
+    "aclaraciones": {
+      "type": "string",
+      "default": "Ninguna"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idPersona": {
+      "type": "hasOne",
+      "model": "Persona",
+      "foreignKey": "idPersona",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

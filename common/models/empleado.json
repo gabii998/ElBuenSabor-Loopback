@@ -1,0 +1,30 @@
+{
+  "name": "Empleado",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idEmpleado": {
+      "type": "number"
+    },
+    "dni": {
+      "type": "number",
+      "required": true
+    },
+    "legajo": {
+      "type": "number",
+      "required": true
+    },
+    "esCocinero": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

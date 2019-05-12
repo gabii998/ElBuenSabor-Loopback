@@ -57,5 +57,25 @@
   "Factura": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Persona": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "PersonaDomicilio": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Empleado": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Cliente": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

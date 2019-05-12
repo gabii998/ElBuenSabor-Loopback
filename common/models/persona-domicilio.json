@@ -1,0 +1,30 @@
+{
+  "name": "PersonaDomicilio",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "idPersona": {
+      "type": "hasOne",
+      "model": "Persona",
+      "foreignKey": "idPersona",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idDomicilio": {
+      "type": "hasOne",
+      "model": "Domicilio",
+      "foreignKey": "idDomicilio",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
