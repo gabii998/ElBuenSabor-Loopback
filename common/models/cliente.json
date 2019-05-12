@@ -1,13 +1,14 @@
 {
   "name": "Cliente",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "idCliente": {
-      "type": "number"
+      "type": "number",
+      "id":true
     },
     "aclaraciones": {
       "type": "string",

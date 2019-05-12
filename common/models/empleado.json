@@ -1,13 +1,14 @@
 {
   "name": "Empleado",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "idEmpleado": {
-      "type": "number"
+      "type": "number",
+      "id":true
     },
     "dni": {
       "type": "number",
