@@ -8,7 +8,7 @@
   "properties": {
     "idEmpleado": {
       "type": "number",
-      "id":true
+      "id": true
     },
     "dni": {
       "type": "number",

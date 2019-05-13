@@ -1,26 +1,30 @@
 {
-  "name": "Factura",
+  "name": "Pedido",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "numero_factura": {
+    "idPedido": {
       "type": "number",
-      "id": true
+      "id":true
     },
-    "fecha": {
+    "fechaHora": {
       "type": "date",
+      "required": true
+    },
+    "precioTotal": {
+      "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "idPedido": {
+    "idCliente": {
       "type": "hasOne",
-      "model": "Pedido",
-      "foreignKey": "idPedido",
+      "model": "Cliente",
+      "foreignKey": "idCliente",
       "options": {
         "nestRemoting": true
       }

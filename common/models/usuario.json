@@ -8,7 +8,7 @@
   "properties": {
     "idUsuario": {
       "type": "number",
-      "id":true
+      "id": true
     },
     "emailUsuario": {
       "type": "string",

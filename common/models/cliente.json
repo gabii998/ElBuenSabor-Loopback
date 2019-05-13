@@ -8,7 +8,7 @@
   "properties": {
     "idCliente": {
       "type": "number",
-      "id":true
+      "id": true
     },
     "aclaraciones": {
       "type": "string",
