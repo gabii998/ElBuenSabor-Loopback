@@ -85,5 +85,9 @@
   "Receta": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Tipo": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

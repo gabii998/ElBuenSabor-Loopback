@@ -8,7 +8,7 @@
   "properties": {
     "idReceta": {
       "type": "number",
-      "id":true
+      "id": true
     },
     "nombre": {
       "type": "string",

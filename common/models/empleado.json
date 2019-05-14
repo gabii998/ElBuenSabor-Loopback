@@ -25,7 +25,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "idTipo": {
+      "type": "hasOne",
+      "model": "Tipo",
+      "foreignKey": "idTipo",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
