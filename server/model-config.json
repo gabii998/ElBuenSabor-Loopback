@@ -89,5 +89,25 @@
   "Tipo": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Margen": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "OrdenCompra": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Articulo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor_has_Articulo": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

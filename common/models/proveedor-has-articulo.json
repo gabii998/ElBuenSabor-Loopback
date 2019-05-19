@@ -1,0 +1,33 @@
+{
+  "name": "Proveedor_has_Articulo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idProveedor": {
+      "type": "number",
+      "required": true
+    },
+    "idArticulo": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "articulos": {
+      "type": "hasOne",
+      "model": "Articulo",
+      "foreignKey": "idArticulo"
+    },
+    "proveedors": {
+      "type": "hasOne",
+      "model": "Proveedor",
+      "foreignKey": "idProveedor"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

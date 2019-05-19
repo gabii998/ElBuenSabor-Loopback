@@ -1,0 +1,30 @@
+{
+  "name": "Articulo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idArticulo": {
+      "type": "number",
+      "required": true
+    },
+    "nombreArticulo": {
+      "type": "string",
+      "required": true
+    },
+    "idCategoria": {
+      "type": "number",
+      "required": true
+    },
+    "idUnidadMedida": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
