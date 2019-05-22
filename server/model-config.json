@@ -14,25 +14,32 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mysql"
   },
   "AccessToken": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "mysql",
+    "public": false,
+    "relations": {
+      "user": {
+        "type": "belongsTo",
+        "model": "Usuario",
+        "foreignKey": "idUsuario"
+      }
+    }
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mysql",
     "public": false
   },
   "Message": {
@@ -87,6 +94,26 @@
     "public": true
   },
   "Tipo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Margen": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "OrdenCompra": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Articulo": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Proveedor_has_Articulo": {
     "dataSource": "mysql",
     "public": true
   }

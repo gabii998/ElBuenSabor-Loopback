@@ -1,0 +1,32 @@
+{
+  "name": "Proveedor",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idProveedor": {
+      "type": "number",
+      "required": true
+    },
+    "cuit": {
+      "type": "number",
+      "required": true
+    },
+    "idPersona": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "personas": {
+      "type": "hasOne",
+      "model": "Persona",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

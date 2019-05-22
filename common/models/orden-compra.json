@@ -1,0 +1,36 @@
+{
+  "name": "OrdenCompra",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idOrdenCompra": {
+      "type": "number",
+      "required": true
+    },
+    "idProveedor": {
+      "type": "number",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "precioTotal": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "proveedors": {
+      "type": "hasOne",
+      "model": "Proveedor",
+      "foreignKey": "idProveedor"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
