@@ -1,0 +1,50 @@
+{
+  "name": "detalle-receta",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idDetalleReceta": {
+      "type": "number"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "calorias": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idReceta": {
+      "type": "hasOne",
+      "model": "Receta",
+      "foreignKey": "idReceta",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idConversion": {
+      "type": "hasOne",
+      "model": "conversion",
+      "foreignKey": "idConversion",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idArticulo": {
+      "type": "hasOne",
+      "model": "Articulo",
+      "foreignKey": "idArticulo",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

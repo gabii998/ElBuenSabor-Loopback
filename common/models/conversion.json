@@ -1,16 +1,27 @@
 {
-  "name": "Margen",
+  "name": "conversion",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idMargen": {
+    "idConversion": {
+      "type": "number"
+    },
+    "unidadUno": {
+      "type": "string",
+      "required": true
+    },
+    "valorUno": {
       "type": "number",
       "required": true
     },
-    "porcentajeGanancia": {
+    "unidadDos": {
+      "type": "string",
+      "required": true
+    },
+    "valorDos": {
       "type": "number",
       "required": true
     }
