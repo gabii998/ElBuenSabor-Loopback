@@ -1,0 +1,43 @@
+{
+  "name": "detallepedido",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_detalle": {
+      "type": "number"
+    },
+    "cantidad": {
+      "type": "number",
+      "required": true
+    },
+    "esManufacturado": {
+      "type": "boolean",
+      "required": true
+    },
+    "precioUnidad": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "numeroPedido": {
+      "type": "hasOne",
+      "model": "Pedido",
+      "foreignKey": "numeroPedido",
+      "options": {
+        "disableInclude": true
+      }
+    },
+    "idArticuloVenta": {
+      "type": "hasOne",
+      "model": "articulo-venta",
+      "foreignKey": "idArticuloVenta"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

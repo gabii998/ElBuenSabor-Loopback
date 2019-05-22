@@ -1,34 +1,32 @@
 {
-  "name": "OrdenCompra",
+  "name": "comanda",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idOrdenCompra": {
-      "type": "number",
-      "required": true
-    },
-    "idProveedor": {
-      "type": "number",
-      "required": true
+    "numero_comanda": {
+      "type": "number"
     },
     "fecha": {
       "type": "date",
       "required": true
     },
-    "precioTotal": {
-      "type": "number",
+    "estado": {
+      "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "proveedors": {
+    "numeroPedido": {
       "type": "hasOne",
-      "model": "Proveedor",
-      "foreignKey": "idProveedor"
+      "model": "Pedido",
+      "foreignKey": "numeroPedido",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

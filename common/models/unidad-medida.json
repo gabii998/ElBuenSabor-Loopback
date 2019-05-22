@@ -1,17 +1,15 @@
 {
-  "name": "Usuario",
-  "base": "User",
+  "name": "unidad-medida",
+  "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
-  "excludeBaseProperties": [],
   "properties": {
-    "idUsuario": {
-      "type": "number",
-      "id": true
+    "idUnidadMedida": {
+      "type": "number"
     },
-    "tipoUsuario": {
+    "nombreUnidadMedida": {
       "type": "string",
       "required": true
     }

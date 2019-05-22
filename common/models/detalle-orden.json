@@ -1,31 +1,40 @@
 {
-  "name": "Proveedor_has_Articulo",
+  "name": "detalle-orden",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idProveedor": {
+    "id_detalle": {
+      "type": "number"
+    },
+    "cantidad": {
       "type": "number",
       "required": true
     },
-    "idArticulo": {
+    "precioUnitario": {
       "type": "number",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "articulos": {
+    "idArticulo": {
       "type": "hasOne",
       "model": "Articulo",
-      "foreignKey": "idArticulo"
+      "foreignKey": "idArticulo",
+      "options": {
+        "nestRemoting": true
+      }
     },
-    "proveedors": {
+    "numeroOrden": {
       "type": "hasOne",
-      "model": "Proveedor",
-      "foreignKey": "idProveedor"
+      "model": "OrdenCompra",
+      "foreignKey": "numeroOrden",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

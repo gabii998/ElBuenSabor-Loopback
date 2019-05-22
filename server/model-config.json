@@ -116,5 +116,37 @@
   "Proveedor_has_Articulo": {
     "dataSource": "mysql",
     "public": true
+  },
+  "unidad-medida": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "articulo-venta": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "categoria": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "comanda": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "conversion": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle-orden": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "detalle-receta": {
+    "dataSource": "mysql",
+    "public": true
   }
 }
