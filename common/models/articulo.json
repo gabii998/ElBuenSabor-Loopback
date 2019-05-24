@@ -8,7 +8,8 @@
   "properties": {
     "idArticulo": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id":true
     },
     "nombreArticulo": {
       "type": "string",

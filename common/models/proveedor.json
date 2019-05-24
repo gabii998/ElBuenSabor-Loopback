@@ -8,7 +8,8 @@
   "properties": {
     "idProveedor": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id":true
     },
     "cuit": {
       "type": "number",
@@ -24,7 +25,7 @@
     "personas": {
       "type": "hasOne",
       "model": "Persona",
-      "foreignKey": ""
+      "foreignKey": "idPersona"
     }
   },
   "acls": [],

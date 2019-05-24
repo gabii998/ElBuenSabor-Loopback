@@ -8,7 +8,8 @@
   "properties": {
     "idMargen": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id":true
     },
     "porcentajeGanancia": {
       "type": "number",
