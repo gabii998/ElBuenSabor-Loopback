@@ -14,18 +14,17 @@
       "type": "number",
       "required": true
     },
-    "idPersona": {
-      "type": "number",
-      "required": true
+    "nombreProveedor":{
+      "type":"string",
+      "required":true
+    },
+    "telefonoProveedor":{
+      "type":"string",
+      "required":true
     }
   },
   "validations": [],
   "relations": {
-    "personas": {
-      "type": "hasOne",
-      "model": "Persona",
-      "foreignKey": ""
-    }
   },
   "acls": [],
   "methods": {}
