@@ -1,7 +1,7 @@
 {
   "name": "Usuario",
   "base": "User",
-  "excludeBaseProperties" : [],
+  "excludeBaseProperties" : ["realm","username","emailVerified","verificationToken"],
   "idInjection": false,
   "options": {
     "validateUpsert": true
