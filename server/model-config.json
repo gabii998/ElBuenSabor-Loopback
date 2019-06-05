@@ -141,10 +141,6 @@
     "dataSource": "mysql",
     "public": true
   },
-  "detalle": {
-    "dataSource": "mysql",
-    "public": true
-  },
   "detalle-receta": {
     "dataSource": "mysql",
     "public": true

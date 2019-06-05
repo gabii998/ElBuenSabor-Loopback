@@ -26,14 +26,11 @@
   },
   "validations": [],
   "relations": {
-<<<<<<< HEAD
-=======
     "personas": {
       "type": "hasOne",
       "model": "Persona",
       "foreignKey": "idPersona"
     }
->>>>>>> 9880ff8df1252ab1c01fd93e7b5929ca9086b43d
   },
   "acls": [],
   "methods": {}
