@@ -1,25 +1,27 @@
 {
-  "name": "Articulo",
+  "name": "conversion",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idArticulo": {
-      "type": "number",
-      "required": true,
-      "id":true
+    "idConversion": {
+      "type": "number"
     },
-    "nombreArticulo": {
+    "unidadUno": {
       "type": "string",
       "required": true
     },
-    "idCategoria": {
+    "valorUno": {
       "type": "number",
       "required": true
     },
-    "idUnidadMedida": {
+    "unidadDos": {
+      "type": "string",
+      "required": true
+    },
+    "valorDos": {
       "type": "number",
       "required": true
     }

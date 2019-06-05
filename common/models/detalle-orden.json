@@ -1,0 +1,42 @@
+{
+  "name": "detalle-orden",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id_detalle": {
+      "type": "number"
+    },
+    "cantidad": {
+      "type": "number",
+      "required": true
+    },
+    "precioUnitario": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idArticulo": {
+      "type": "hasOne",
+      "model": "Articulo",
+      "foreignKey": "idArticulo",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "numeroOrden": {
+      "type": "hasOne",
+      "model": "OrdenCompra",
+      "foreignKey": "numeroOrden",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

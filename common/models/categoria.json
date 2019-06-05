@@ -1,18 +1,16 @@
 {
-  "name": "Margen",
+  "name": "categoria",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idMargen": {
-      "type": "number",
-      "required": true,
-      "id":true
+    "idCategoria": {
+      "type": "number"
     },
-    "porcentajeGanancia": {
-      "type": "number",
+    "nombreCategoria": {
+      "type": "string",
       "required": true
     }
   },

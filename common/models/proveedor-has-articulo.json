@@ -1,14 +1,15 @@
 {
   "name": "Proveedor_has_Articulo",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "idProveedor": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id":true
     },
     "idArticulo": {
       "type": "number",

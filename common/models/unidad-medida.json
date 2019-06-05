@@ -1,18 +1,16 @@
 {
-  "name": "Margen",
+  "name": "unidad-medida",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "idMargen": {
-      "type": "number",
-      "required": true,
-      "id":true
+    "idUnidadMedida": {
+      "type": "number"
     },
-    "porcentajeGanancia": {
-      "type": "number",
+    "nombreUnidadMedida": {
+      "type": "string",
       "required": true
     }
   },

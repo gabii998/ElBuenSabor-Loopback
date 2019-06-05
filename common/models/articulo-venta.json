@@ -1,0 +1,50 @@
+{
+  "name": "articulo-venta",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idArticuloVenta": {
+      "type": "number"
+    },
+    "unidades": {
+      "type": "number",
+      "required": true
+    },
+    "costo": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "idMargen": {
+      "type": "hasOne",
+      "model": "Margen",
+      "foreignKey": "idMargen",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idDetalleReceta": {
+      "type": "hasOne",
+      "model": "detalle-receta",
+      "foreignKey": "idDetalleReceta",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "idArticulo": {
+      "type": "hasOne",
+      "model": "Articulo",
+      "foreignKey": "idArticulo",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

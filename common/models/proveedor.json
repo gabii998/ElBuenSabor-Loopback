@@ -1,14 +1,15 @@
 {
   "name": "Proveedor",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "idProveedor": {
       "type": "number",
-      "required": true
+      "required": true,
+      "id":true
     },
     "cuit": {
       "type": "number",
@@ -25,6 +26,14 @@
   },
   "validations": [],
   "relations": {
+<<<<<<< HEAD
+=======
+    "personas": {
+      "type": "hasOne",
+      "model": "Persona",
+      "foreignKey": "idPersona"
+    }
+>>>>>>> 9880ff8df1252ab1c01fd93e7b5929ca9086b43d
   },
   "acls": [],
   "methods": {}
