@@ -144,5 +144,9 @@
   "detalle-receta": {
     "dataSource": "mysql",
     "public": true
+  },
+  "detalle-pedido":{
+    "dataSource":"mysql",
+    "public":true
   }
 }
